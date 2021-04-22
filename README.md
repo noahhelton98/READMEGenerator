@@ -1,6 +1,6 @@
 # README Generator 
 
-  ## Table of Contents 
+## Table of Contents 
 
   1. [Description](https://github.com/noahhelton98/READMEGenerator#Description)
   2. [Installion](https://github.com/noahhelton98/READMEGenerator#Installion)
@@ -9,20 +9,20 @@
   5. [Contibutors](https://github.com/noahhelton98/READMEGenerator#Contibutors)
   6. [Questions](https://github.com/noahhelton98/READMEGenerator#Questions)
   
-    ## [Description](#Description)
-    A command line tool that creates professional readmes for all of your projects
+## [Description](#Description)
+A command line tool that creates professional readmes for all of your projects
 
-    ## [Installion](#Installion)
-    npm i 
+## [Installion](#Installion)
+npm i 
 
-    ## [Usage](#Usage)
-    used to make READMEs using inquirer and fs
+## [Usage](#Usage)
+used to make READMEs using inquirer and fs
 
-    ## [Licenses](#Licenses)
-    undefined
+## [Licenses](#Licenses)
+undefined
 
-    ## [Contributors](#Contributors)
-    no 
+## [Contributors](#Contributors)
+no 
 
-    ## [Questions?](#Questions)
-    Email me at noahhelton98@gmail.com or check out my [GitHub](https://github.com/noahhelton98)
+## [Questions?](#Questions)
+Email me at noahhelton98@gmail.com or check out my [GitHub](https://github.com/noahhelton98)
