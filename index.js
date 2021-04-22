@@ -5,6 +5,7 @@ const util = require('util');
 
 
 //Import genrateMarkdown File
+const writeFileAsync = util.promisify(fs.writeFile);
 
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
@@ -40,11 +41,6 @@ const promptUser = () => {
   },
   {
     type: 'input',
-    name: 'usage',
-    message: 'Describe the usage of this application.',
-  },
-  {
-    type: 'input',
     name: 'contributors',
     message: 'Did anyone else contribute to this project? If so, what are their GitHub Usernames',
   },
@@ -57,19 +53,26 @@ const promptUser = () => {
     type: 'input',
     name: 'tests',
     message: 'Enter any tests for this application:',
-},
+}
 ]);
 };
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) =>
+   err ? console.error(err) : console.log('')
+ );
+}
 
 // TODO: Create a function to initialize app
 const init = () => {
-    promptUser()//.then((answers) => console.log(answers)) 
+    promptUser()
+      .then((answers) => writeToFile('README.md', generateMarkdown(answers)))
+      .then(() => console.log('Congrats, your read me file was made.'))
+      .catch((err) => console.error(err));
 
-}
+};
 
 // Function call to initialize app
 init();
