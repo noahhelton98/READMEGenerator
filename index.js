@@ -9,7 +9,6 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
-console.log(generateMarkdown)
 
 
 // TODO: Create an array of questions for user input
@@ -53,6 +52,17 @@ const promptUser = () => {
     type: 'input',
     name: 'tests',
     message: 'Enter any tests for this application:',
+},
+{
+  type: "list",
+  message: "What license is this project under?",
+  name: "license",
+  choices: [
+      'MIT',
+      'GPL',
+      'BSD-3',
+      'None'
+  ]
 }
 ]);
 };
@@ -69,7 +79,7 @@ function writeToFile(fileName, data) {
 const init = () => {
     promptUser()
       .then((answers) => writeToFile('README.md', generateMarkdown(answers)))
-      .then(() => console.log('Congrats, your read me file was made.'))
+      .then(() => console.log('Congrats, your README file was made.'))
       .catch((err) => console.error(err));
 
 };

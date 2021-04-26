@@ -1,6 +1,7 @@
-# README Generator 
 
-## Table of Contents 
+  # Good Readme generator 
+
+  ## Table of Contents 
 
   1. [Description](https://github.com/noahhelton98/READMEGenerator#Description)
   2. [Installion](https://github.com/noahhelton98/READMEGenerator#Installion)
@@ -9,20 +10,20 @@
   5. [Contibutors](https://github.com/noahhelton98/READMEGenerator#Contibutors)
   6. [Questions](https://github.com/noahhelton98/READMEGenerator#Questions)
   
-## [Description](#Description)
-A command line tool that creates professional readmes for all of your projects
+  ## [Description](#Description)
+  A CLI that creates a professional README for all your github repos using node.js and inquirer.
 
-## [Installion](#Installion)
-npm i 
+  ## [Installion](#Installion)
+  npm i to install dependencies and node index.js to run 
 
-## [Usage](#Usage)
-used to make READMEs using inquirer and fs
+  ## [Usage](#Usage)
+  To create professional READMEs efficiently
 
-## [Licenses](#Licenses)
-undefined
+  ## [Licenses](#Licenses)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## [Contributors](#Contributors)
-no 
+  ## [Contributors](#Contributors)
+  NA 
 
-## [Questions?](#Questions)
-Email me at noahhelton98@gmail.com or check out my [GitHub](https://github.com/noahhelton98)
+  ## [Questions?](#Questions)
+  Email me at noahhelton98@gmail.com or check out my [GitHub](https://github.com/noahhelton98)
